@@ -1,0 +1,78 @@
+packageNamespace: ziganshinalexey/yii2-steam-app
+packageTitle: Модуль приложений
+type: logic
+tables:
+  steam_app:
+    __options:
+      type: entity
+      entityName: SteamApp
+      entityTitle: Приложение
+      tableComment: Список приложений
+      tableUseTableAlias: true
+      tableAllowExistsTable: false
+      tableAppendSystemFields: false
+      createTableMigration: migrations/m180904_153716_create_steamapp_table.php
+    id:
+      type: primaryKey
+      comment: Идентификатор
+    appid:
+      type: integer
+      "null": false
+      comment: Идентификатор во внешней системе
+    name:
+      type: string
+      size: 255
+      "null": false
+      comment: Название
+    __relations: []
+admin:
+  steam_app:
+    fieldTypes: []
+    indexColumns: []
+    viewPage: []
+fileHashList:
+  Autoconfig.php: 0a0951f13027199062cfa09ca15dad711767b5ac8e8590eedae7eb5fb3457ade
+  interfaces/steamApp/ComponentInterface.php: 5115d18edc2917ac8e0243580ce856c1abc39f7607335f05623d4b4cdf3740e6
+  interfaces/steamApp/QueryInterface.php: 3d25d6a05af26ee6f50662b0d21d7e938511543f8bc96e01c0f1c73eb36e983c
+  interfaces/steamApp/FactoryInterface.php: 2cd8f87c0e8853d6047651575101758ae8f718ef0f968881d94a5dee3cb34e13
+  interfaces/steamApp/dto/OperationListResultInterface.php: 97941fbb4852cab0a91e9ec8b5a426c86138584d3dada19f6e16e823b105fdba
+  interfaces/steamApp/dto/OperationResultInterface.php: 3031586d23c7d29e612dfee91c4e62c2748baca92c710c7c4e38513ccd78db09
+  interfaces/steamApp/operations/BaseFindOperationInterface.php: ef1016c7410bec442901855f4a38729e36c1c28e90ca51bf6389525c0689bc5c
+  interfaces/steamApp/operations/MultiDeleteOperationInterface.php: 5673cacd43458a22a8bc179a08ec92861d57d7b18ddd4d38cf4bcd1bf73d35dd
+  interfaces/steamApp/operations/MultiFindOperationInterface.php: ca703545798cd6f6959facbeff40c42c7787264ee2e15326c4d7cd992b04eebf
+  interfaces/steamApp/operations/SingleCreateOperationInterface.php: d040499687736248d83a7e7bab761a6311041336061914f2d676d814d4f21aed
+  interfaces/steamApp/operations/SingleFindOperationInterface.php: 40c8f99f8487203f0744dd4ae945e6df573dfe0354f2f343e55a78121f1947f4
+  interfaces/steamApp/operations/SingleUpdateOperationInterface.php: 2db09f375643247a7a0831cfac446c4f1e9010fbcebe48af182a1598600f754a
+  interfaces/steamApp/filters/BaseFilterInterface.php: 2477d4e0a949b118535e503468354bac29f8840c05b80f6ea9b1d634d90bf0da
+  interfaces/steamApp/filters/BaseFilterOperationInterface.php: f398a280d89aa9af1cb094d4a974f8cd378393c588a3376ed7c2edc5814402c8
+  interfaces/steamApp/filters/MultiFilterInterface.php: cf238fc0a06c5678d70279dcef4c8304c3f98a5121477fae20abdfe48b671d20
+  interfaces/steamApp/filters/MultiFilterOperationInterface.php: 035396ff2635be2dc8cdbbc88e9bd2fad947e0560c1381640083560207590c90
+  interfaces/steamApp/filters/SingleFilterInterface.php: 83aac0bbec689c6452ab13517501abc0a3a96fc091a71786c05aa77c48351ade
+  interfaces/steamApp/filters/SingleFilterOperationInterface.php: d7c873aa3f2f2d49164427e0da17a7e2b1034bd297c637e990f1587a91f5a62b
+  migrations/m180904_153716_create_steamapp_table.php: b28ee110893aeabc526024e6279be70df521ecb325c6e3d67b9ef5d44f2ab072
+  queries/SteamAppQuery.php: 8d64d583b804797ffc9004ba0476c9b7e738c0cd5d378d425252f60738435850
+  entities/SteamAppActiveRecord.php: 39e89823806f2494ff20646f9125181feca2e03e81e2f3e991999d3a2be26280
+  dataTransferObjects/steamApp/OperationResult.php: 0c896c0a0bea0f87e1cbb7fa15c79b6094df78d708a5f131fdf2df0570651139
+  dataTransferObjects/steamApp/OperationListResult.php: 004761365cf0ec232d963c7ee6834bb9f3095e755eaaf12869f8695566f660f0
+  hydrators/SteamAppDatabaseHydrator.php: dff7576909f7cfaf7b5e13e6631602f6836dc91c90fd5460e05d7faf374a373c
+  traits/steamApp/DatabaseHydratorTrait.php: 67cee5ddd030c179bb3485833e4b38194da30ff24a1e84721426a923cb4c3114
+  traits/steamApp/SteamAppComponentTrait.php: 8bb2c08ac91d424aec471cefc7a688c479eb064368cba1fccdd03734bc5d832f
+  factories/SteamAppFactory.php: 7c59f0d5c93a369cb5e952aec2144693b3e432c6b7165322616ba964537145ec
+  operations/steamApp/SingleUpdateOperation.php: 1479147fcc1e26707c280225469800cbde86b41a8b7c7779a60d6a3f1b906c2c
+  operations/steamApp/MultiDeleteOperation.php: 85be75656489fb0bee4756f14ae7e03ae9b0cd32d502cf604ba1cfb7ee537684
+  operations/steamApp/SingleCreateOperation.php: a7d3b4516f9a9e2dd18a21a44593eb4ab145aa1c7215eee4cef5578ce82d076b
+  operations/steamApp/BaseFindOperation.php: bc37073ec85afb1b6e8f11bdd0c59048436ea638fbe52d4d3a9218bf55d3663e
+  operations/steamApp/SingleFindOperation.php: 55fa049aaff4f999e6f015384f4de570e370e21235d07f83561947a4c0ecbadc
+  operations/steamApp/MultiFindOperation.php: 31aa7b1299da90fe6a8fad3c8c20fe9e9ed8665df74340bdb2d5e0da60bdbfab
+  filters/steamApp/BaseFilter.php: 977aec0fffe60be2eeaf84442503fb89d3ce6c9f61b40b94889717d1d928a55c
+  filters/steamApp/SingleFilter.php: 50ca0a745a6812b62bc93ec45d1c806902bb8055535bc3c4f1d4445f251333ec
+  filters/steamApp/MultiFilter.php: d725362ac07b4db355039ad80690440a434debbfa2ef6eee4d9b15781b09bcd1
+  validators/steamApp/SteamAppFilterValidator.php: f7efa06bb8d0945abdbfcd488009d7eb09d03ae82d92961afd31acd90e0e6418
+  components/SteamAppComponent.php: d2511e5d660c83edad9cec04edd21be018579b0682478b9615fc3947a3584d93
+  dataTransferObjects/steamApp/SteamApp.php: cde663038cb35964b3e7869183fd365c0c64292b2fdc80db905f7906ca9fd90f
+  interfaces/steamApp/dto/SteamAppInterface.php: 3599632c1fc8e39c5c3a343aafc9e20db1fa1121dc3158b607bc8d97ab545029
+  validators/steamApp/SteamAppValidator.php: 44aabebfca25bc30fab9f6915833eda87109d83836eaad46cb5efaddd3c10a7b
+  composer.json: 12a8c963faa50b9a0affcbca2174a7984e7fdf552ee346bbc8312d4038b3ca66
+  config/steamApp.component.global.php: 75e9dae766d0a372439523a9efc9f977e95e80acb76ef928268a42bcd873b477
+  config/console.config.php: 4cc3b30e7768e40f19ef3f6a60b149b94411244884341fa69dfbf9f186fe792b
+  config/web.config.php: fe5533abefd4d617e2648ca49f9c6690613ca190daceb49102719c77e0f73f4d
